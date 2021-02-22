@@ -1,4 +1,3 @@
-<%page expression_filter="h"/>
 <%! from django.utils.translation import ugettext as _ %>
 
 <%inherit file="main.html" />
@@ -38,19 +37,20 @@
       <h2>${_("Log In")}</h2>
       <hr>
     </header>
-    <form id="login_form" class="login_form" method="post" action="/openid/provider/login/">
+<!--    <form id="login_form" class="login_form" method="post" action="/openid/provider/login/"> -->
 %if error:
       <div id="login_error" class="modal-form-error" style="display: block;">${_("Email or password is incorrect.")}</div>
 %endif
-      <p>${_("Your username, email, and full name will be sent to {destination}, where the collection and use of this information will be governed by their terms of service and privacy policy.").format(destination=return_to)}</p>
+<!--      <p>${_("Your username, email, and full name will be sent to {destination}, where the collection and use of this information will be governed by their terms of service and privacy policy.").format(destination=return_to)}</p>
       <label>${_("E-mail")}</label>
       <input type="text" name="email" placeholder="${_('E-mail')}" autofocus="autofocus" />
       <label>${_("Password")}</label>
       <input type="password" name="password" placeholder="${_('Password')}" />
       <div class="submit">
-        <input name="submit" type="submit" value="${_('Return To %s') % return_to}" />
+        <input name="submit" type="submit" value="${_('Return To %s') % return_to}" />-->
       </div>
     </form>
   </div>
 </section>
 <div id="lean_overlay"></div>
+                                
