@@ -69,7 +69,7 @@
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
 
-  h1 {
+  h2 {
     @extend %t-title4;
 
     display: none;
@@ -315,11 +315,6 @@
       display: inline-block;
       width: calc(50% - 10px);
     }
-
-    .label-text-small {
-      font-size: small;
-    }
-
     /** FROM _accounts.scss - start **/
     label,
     input,
@@ -502,7 +497,6 @@
 
   .input-block {
     width: 100%;
-    border-color: $gray;
   }
 
   .input-inline {
